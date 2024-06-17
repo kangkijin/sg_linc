@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+/*  scrollbar */
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+	margin-bottom: 8px;
+}
+
+/* 모바일에서 세로방향 터치불가 fix */
+.mCustomScrollbar,
+.mCustomScrollbar.mCS_touch_action,
+.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox {
+	height: auto;
+	-ms-touch-action: pan-x;
+	touch-action: pan-x;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox.mCSB_horizontal {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+/*.mCustomScrollBox.mCSB_horizontal { touch-action: pan-y pinch-zoom; }*/
+
+.tbl {
+	position: relative;
+	border-top: 2px solid #878787;
+}
+.tbl table {
+	width: 100%;
+	text-align: center; font-size: 1.5rem;
+	background-color: #fff;
+	border-bottom: 1px solid #ebebeb;
+}
+.tbl table thead th {
+	padding: 8px;
+	color: #000; font-weight: 500; text-align: center; 
+	background-color: #ebebeb;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.tbl table tbody th, .tbl table tfoot th {
+	padding: 8px;
+	text-align: center; 
+	border-bottom: 1px solid #ebebeb;
+}
+.tbl table tbody td, .tbl table tfoot td {
+	padding: 8px;
+	text-align: center; 
+	border-bottom: 1px solid #ebebeb;
+}
+.tbl input[type="text"].form_style {
+	height: 32px;
+}
+
+.tbl_col table thead th {
+	padding: 8px 0;
+	font-weight: 500;
+	background: #ebebeb;
+	border: 1px solid #e1e1e1;
+	border-top: none;
+}
+.tbl_col table tbody td {
+	position: relative;
+	border: 1px solid #e1e1e1;
+	border-top: none;
+}
+.tbl_col table thead th:first-child {
+	border-left: none;
+}
+.tbl_col table thead th:last-child {
+	border-right: none;
+}
+.tbl_col table tbody th:first-child {
+	border-left: none;
+}
+/*.tbl_col table tbody td:first-child {
+	border-left: none;
+}*/
+.tbl_col table tbody td:last-child {
+	border-right: none;
+}
+.tbl_col .bg_td {
+	background: #ebebeb;
+}
+.tbl_col .bg_td2 {
+	background: #f7f7f7;
+}
+.tbl_col .bg_th {
+	color: #000; font-weight: 500;
+	background: #ebebeb;
+}
+
+.tbl_row {
+	border-top: none;
+	border-right: 1px solid #e1e1e1;
+}
+.tbl_row table thead th {
+	padding: 8px 0;
+	font-weight: 500;
+	background: #ebebeb;
+	border: 1px solid #e1e1e1;
+}
+.tbl_row table tbody th {
+	font-weight: 600; text-align: center; color: #2c2c2c;
+	background: #ebebeb;
+	border: 1px solid #e1e1e1;
+	border-left: 2px solid #878787;
+}
+.tbl_row table tbody td {
+	text-align: left;
+	border: 1px solid #ebebeb;
+}
+.tbl_row table thead th:first-child {
+	border-left: none;
+}
+.tbl_row table thead th:last-child {
+	border-right: none;
+}
+.tbl_row table tbody td:last-child {
+	border-right: none;
+}
+.tbl_row .bg_td {
+	background: #ebebeb;
+}
+
+/* 가로 스크롤 테이블 */
+.mCSB_container {
+	width: 100% !important;
+}
+.scrollx_tbl_xs {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xs .mCSB_container {
+	min-width: 500px !important;
+}
+.scrollx_tbl_xs table{
+	min-width: 500px;
+}
+.scrollx_tbl_sm {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_sm .mCSB_container {
+	min-width: 600px !important;
+}
+.scrollx_tbl_sm table{
+	width: 100%;
+	min-width: 600px;
+}
+.scrollx_tbl_md{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_md .mCSB_container {
+	min-width: 800px !important;
+}
+.scrollx_tbl_md table{
+	min-width: 800px;
+}
+.scrollx_tbl_lg{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_lg .mCSB_container {
+	min-width: 1000px !important;
+}
+.scrollx_tbl_lg table{
+	min-width: 1000px;
+}
+.scrollx_tbl_xl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xl .mCSB_container {
+	min-width: 1200px !important;
+}
+.scrollx_tbl_xl table{
+	min-width: 1200px;
+}
+.scrollx_tbl_xxl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xxl .mCSB_container {
+	min-width: 1600px !important;
+}
+.scrollx_tbl_xxl table{
+	min-width: 1600px;
+}
+
+.tbl_hover tbody tr:hover {
+	background-color: #dbecf6;
+	cursor: pointer;
+}
+
+/* input, textarea, select 사용 */
+.td_input {
+	padding: 5px !important;
+}
+/* radio, check 사용 */
+.td_input2 {
+	padding: 5px 10px !important;
+}
+.tbl_fixed table {
+	table-layout: fixed;
+	word-break: break-all;
+}
+
+/* 공통 */
+.tbl .select_form {
+	margin: 0;
+	height: 32px;
+	margin-left: 0 !important;
+}
+.tbl .select_form label {
+	line-height: 28px;
+}
+.select_form .select_custom {
+	height: 100%;
+}
+
+/* 테이블 링크 */
+.td_append {
+	display: table;
+	width: auto;
+	word-break: break-word;
+	table-layout: fixed;
+}
+.td_append a {
+	display: table-cell;
+	font-weight: inherit; word-break: break-word;
+}
+.td_append a p {
+	position: relative;
+	display: block;
+	display: -webkit-box;
+	height: 22px;
+	font-weight: inherit; text-overflow: ellipsis; word-break: break-all; 
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.td_append .td_appendicon {
+	display: table-cell;
+	font-size: 0; line-height: 0; white-space: nowrap;
+}
+.linked {
+	position: relative; top: -1px;
+	display: inline-block;
+	margin-left: 6px;
+	width: 16px; height: 15px;
+	vertical-align: 0;
+	background: url(../../images/client/formstyle/icon_td_linked.png) no-repeat center;
+}
+.filelinked {
+	position: relative; top: -1px;
+	display: inline-block;
+	margin-left: 6px;
+	width: 14px; height: 16px;
+	vertical-align: 0;
+	background: url(../../images/client/formstyle/icon_filelinked.png) no-repeat center;
+}
+.td_append a {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+/* 테이블 상세 보기 */
+.viewer {
+	position: relative; top: -1px;
+	display: inline-block;
+	margin-left: 5px;
+	width: 15px; height: 15px;
+	vertical-align: 0;
+	background: url(../../images/client/formstyle/icon_td_viewer.png) no-repeat center;
+}
+
+/* 테이블 잠금 */
+.locked {
+	position: relative; top: -1px;
+	display: inline-block;
+	margin-left: 5px;
+	width: 10px; height: 15px;
+	vertical-align: 0;
+	background: url(../../images/client/formstyle/icon_td_locked.png) no-repeat center;
+	background-size: contain;
+}
+
+/* 파일 다운로드 */
+.file_down {
+	display: inline-block;
+	width: 17px; height: 16px;
+	vertical-align: top; font-size: 0; line-height: 0;
+	background: url(../../images/client/formstyle/icon_filedown.png) no-repeat;
+}
+.file_down[disabled] {
+	background: url(../../images/client/formstyle/bg_fileform.png) no-repeat;    
+	cursor: default;
+	opacity: 0.4;
+}
+table .file_down {
+	margin-top: 3px;
+}
+
+.file_down2 {
+	display: inline-block;
+	margin-right: 15px;
+	padding-left: 20px;
+	color: #0a199e;
+	background: url(../../images/client/formstyle/icon_filelinked.png) no-repeat left center;
+}
+.file_down2:last-child {
+	margin-right: 0;
+}
+
+
+/* 학기별 수강이력 */
+.tfoot_sum {
+	padding: 7px;
+	color: #494949; font-size: 1.8rem; font-weight: 500; text-align: center;
+	background: #dfe7f3;
+}
+.tfoot_sum::before {
+	content: "";
+	display: inline-block;
+	margin-top: 4px; margin-right: 2px;
+	width: 15px; height: 20px;
+	vertical-align: top;
+	background: url(../../images/client/sub/icon_tfootsum.png) no-repeat center; background-size: contain;
+}
+
+
+/* 비교과 상세 테이블 */
+/* .tbl_text tbody tr {
+	border-top: 1px solid #cdcdcd;
+	border-bottom: 1px solid #cdcdcd;
+}
+.tbl_text tbody tr th, .tbl_text tbody tr td {
+	padding: 9px;
+	text-align: left;
+} */
+
+/* 교과활동 이수 테이블 */
+/* .subject_addlist table tr.selected {
+	background-color: #dbecf6;
+} */
+
+/* 포트폴리오 희망취업스타일 */
+/* .resume_container .tbl_col table th {
+	text-align: center;
+}
+.resume_container .tbl_col table td {
+	text-align: center;
+} */
+
+
+/*=================== hover ===================*/
+@media screen and (min-width:1025px) {
+
+	/* 테이블 링크 hover */
+	.td_append a:hover {
+		color: #000;
+		text-decoration: underline;
+	}
+
+
+}
+/*=================== //hover ===================*/
+@media screen and (max-width:768px) {
+	
+	/* 학기별 수강이력 768 */
+	.tfoot_sum {
+		font-size: 1.6rem; 
+	}
+	.tfoot_sum::before {
+		margin-top: 1px;
+	}
+
+}
